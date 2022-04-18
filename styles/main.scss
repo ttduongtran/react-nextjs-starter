@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-main {
+  background-image: url('/assets/images/bg.png');
+  background-repeat: no-repeat;
+  background-color: #0d0e21 !important;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: calc(100vh - 36px);
+}
+
+.min-h-fit-space {
+  min-height: calc(100vh - 108px);
+}
+
+.floating {
+  -webkit-animation-name: floating;
+  animation-name: floating;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+@-webkit-keyframes floating {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translate(0);
+  }
+}

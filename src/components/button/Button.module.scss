@@ -1,0 +1,102 @@
+.dtt__button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 500;
+  background-color: transparent;
+  font-size: 16px;
+  color: white;
+  white-space: nowrap;
+  text-align: center;
+  transition: background-color 300ms ease-out;
+  transition: all 250ms ease, filter 2000ms cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 200ms ease,
+    -webkit-filter 2000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+  height: auto;
+  border: 1px solid #e5b80b;
+  width: fit-content;
+  border-radius: 0px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+  }
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    // box-shadow: $Shadow-1;
+    transform: translateY(-2px);
+  }
+
+  &.border {
+    border-radius: 10px;
+  }
+
+  &.secondary {
+    color: #e5b80b;
+  }
+
+  &.round {
+    border-radius: 50px;
+  }
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+  &.small {
+    padding: 6px 32px !important;
+  }
+
+  &.medium {
+    padding: 12px 32px !important;
+  }
+
+  &.full-width {
+    width: auto !important;
+  }
+
+  &.linear {
+    border-radius: 0.5em;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: 0 0 6px 0 rgb(96 175 212 / 50%);
+    border: 3px solid transparent;
+    background: transparent;
+    background-image: linear-gradient(
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0)
+      ),
+      linear-gradient(0deg, #42d784, #60d5dc);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: inset 2px 1000px 1px #0d0e21;
+
+    &:hover {
+      filter: hue-rotate(83deg);
+    }
+  }
+  &.shadow {
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 30px 1px #4ec57f;
+    border: 3px solid #4caf50;
+    cursor: pointer;
+    font-size: 12px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-width: 130px;
+    padding: 6px 15px;
+  }
+  &.secondary {
+    color: #e5b80b;
+  }
+}
